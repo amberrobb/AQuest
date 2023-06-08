@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --background-color: yellow;
+  --color: black;
+  --active-btn: yellowgreen;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+
+container {
+  width: 100%;
+  height: 100vh;
+}
+
+dialog {
+  background-color: var(--color);
+  width: 350px;
+  max-width: 80%;
+  height: 200px;
+  position: absolute;
+  top: calc(50vh - 100px);
+  left: calc(50vw - 175px);
+  text-align: center;
+  > form {
+    margin-top: 20px;
+    padding: 25px;
+    color: var(--background-color);
+
+    > p {
+      > a {
+        color: var(--background-color);
+      }
+    }
+    > div {
+      text-align: center;
+
+      > #cancel {
+        margin-top: 40px;
+        padding: 10px 20px;
+        border: none;
+        background-color: var(--background-color);
+        cursor: pointer;
+      }
+
+      > #cancel:hover {
+        background-color: var(--active-btn);
+      }
+    }
+  }
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  > h1 {
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+  }
+
+  > button {
+    height: 25px;
+    margin: 0 20px;
+    padding: 0 10px;
+    background-color: transparent;
+    border: 1px black solid;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  > button:hover {
+    background-color: var(--active-btn);
+  }
+}
+
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+
+    > span {
+      font-size: 0.6em;
+    }
+  }
+
+  > .btn-field {
+    > button {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 5px 20px;
+      background-color: transparent;
+      border: 1px black solid;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    > button:hover {
+      background-color: var(--active-btn);
+    }
+
+    > #add {
+      border: 2px black solid;
+      background-color: var(--active-btn);
+      border-radius: 5px 0 0 5px;
+    }
+
+    > #division {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  > span {
+    font-size: 0.7em;
+    margin-bottom: 20px;
+  }
+
+  > .active-task {
+    font-size: 6em;
+  }
+
+  > .result {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    > span {
+      text-align: center;
+      font-size: 0.7em;
+    }
+
+    > .result-emoji {
+      > input {
+        background-color: var(--background-color);
+        width: 200px;
+        font-size: 6em;
+        text-align: center;
+        border: 1px black solid;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+
+      > #emoji {
+        width: 100px;
+        height: 100px;
+        background-color: var(--background-color);
+        margin-left: 20px;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  > .ctrl-btn > button {
+    height: 25px;
+    margin: 0 20px;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 1px black solid;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  > .ctrl-btn > button:hover {
+    background-color: var(--active-btn);
+  }
+}

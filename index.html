@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>AQ</title>
+  </head>
+  <body>
+    <container>
+      <!-- pop-up dialog box, containing a form -->
+      <dialog id="favDialog">
+        <form method="dialog">
+          <p>
+            made by
+            <br />
+            <a href="https://www.marcoberardino.com" target="_blank"
+              >Robert Di Marcoberardino</a
+            >
+          </p>
+          <div>
+            <button id="cancel" type="reset">Close</button>
+          </div>
+        </form>
+      </dialog>
+      <nav>
+        <h1>Adrian's Quest</h1>
+        <button id="toggle-about-modal">about</button>
+      </nav>
+      <div class="wrapper">
+        <h2>Mathimator <span>// score: 12/15</span></h2>
+        <div class="btn-field">
+          <button id="add">+</button>
+          <button id="substract">–</button>
+          <button id="multiply">*</button>
+          <button id="division">/</button>
+        </div>
+        <span>toggle on/off</span>
+        <div class="active-task">
+          <p id="current-operation">5 + 7</p>
+        </div>
+        <div class="result">
+          <span>enter correct no. below!</span>
+          <div class="result-emoji">
+            <input id="result" type="number" placeholder="" autofocus />
+            <img id="emoji" src="/img/1873906.png" />
+          </div>
+        </div>
+        <div class="ctrl-btn">
+          <button id="show">Show</button>
+          <button id="skip">Skip</button>
+        </div>
+      </div>
+    </container>
+    <script src="/script/script.js" type="module"></script>
+  </body>
+</html>
